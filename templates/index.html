@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Thought Journal</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="container">
+    <h1>What's your thought for today?</h1>
+    <form id="thoughtForm" method="POST" action="/submit">
+      <textarea name="thought" placeholder="Type your thought here..." required></textarea>
+      <button type="submit">Save</button>
+    </form>
+  </div>
+</body>
+</html>
